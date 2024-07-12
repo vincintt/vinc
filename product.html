@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Cs.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070707;
+            color: #cecece;
+        }
+        header {
+            background-color: #080808;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #cecece;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007aff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #080808;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Apple</h1>
+    <ul class="nav_items">
+        <li class="nav_item">
+            <a href="index.html" class="nav_link">Home</a>
+            <a href="product.html" class="nav_link">Product</a>
+            <a href="services.html" class="nav_link">Services</a>
+            <a href="contacts.html" class="nav_link">Contact</a>
+        </li>
+    </ul>
+</header>
+
+<div class="container">
+    <div class="product">
+        <img src="iphone.jpg" alt="iPhone">
+        <h2>iPhone 14</h2>
+        <p>Experience the latest technology with the iPhone 14.</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <img src="macbook.jpg" alt="MacBook">
+        <h2>MacBook Pro</h2>
+        <p>The ultimate laptop for professionals and creatives.</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <img src="ipad.jpg" alt="iPad">
+        <h2>iPad Air</h2>
+        <p>Powerful and portable, perfect for work and play.</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+
+    <div class="product">
+        <img src="watch.jpg" alt="Apple Watch">
+        <h2>Apple Watch Series 7</h2>
+        <p>Your perfect health and fitness companion.</p>
+        <a href="#" class="button">Buy Now</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

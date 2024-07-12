@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Apple</title>
+    <link rel="stylesheet" href="Cs.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070707;
+            color: #cecece;
+        }
+        header {
+            background-color: #080808;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #cecece;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .input_box {
+            margin-bottom: 15px;
+        }
+        .input_box input, .input_box textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #007aff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        .social_media {
+            margin: 20px 0;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #080808;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social_media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #cecece;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contacts</h1>
+    <nav class="nav">
+        <a href="#" class="nav_logo">Apple</a>
+        <ul class="nav_items">
+            <li class="nav_item">
+                <a href="index.html" class="nav_link">Home</a>
+                <a href="product.html" class="nav_link">Product</a>
+                <a href="services.html" class="nav_link">Services</a>
+                <a href="contacts.html" class="nav_link">Contact</a>
+            </li>
+        </ul>
+        <button class="button" id="form-open">Login</button>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>We'd love to hear from you!</h2>
+    <form action="javascript:void(0);" onsubmit="sendMessage()">
+        <div class="input_box">
+            <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="input_box">
+            <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="input_box">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="button">Send Message</button>
+    </form>
+
+    <div class="social_media">
+        <h3>Follow Us</h3>
+        <a href="https://twitter.com/apple" target="_blank">Twitter</a>
+        <a href="https://facebook.com/apple" target="_blank">Facebook</a>
+        <a href="https://instagram.com/apple" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/apple" target="_blank">YouTube</a>
+    </div>
+
+    <div class="contact_details">
+        <h3>Contact Details</h3>
+        <p>Email: <a href="mailto:support@apple.com">support@apple.com</a></p>
+        <p>Phone: 1-800-MY-APPLE</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Apple Inc. All rights reserved.</p>
+</footer>
+
+<script>
+    function sendMessage() {
+        alert("Thank you for contacting us! We will get back to you soon.");
+    }
+</script>
+
+</body>
+</html>
